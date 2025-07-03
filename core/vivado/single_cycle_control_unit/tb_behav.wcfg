@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="100.000 ns"></ZoomEndTime>
+      <Cursor1Time time="30.590 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/tb/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/funct7_5" type="logic">
+      <obj_property name="ElementShortName">funct7_5</obj_property>
+      <obj_property name="ObjectShortName">funct7_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/zeroFlag" type="logic">
+      <obj_property name="ElementShortName">zeroFlag</obj_property>
+      <obj_property name="ObjectShortName">zeroFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/PCSrc" type="logic">
+      <obj_property name="ElementShortName">PCSrc</obj_property>
+      <obj_property name="ObjectShortName">PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ResultSrc" type="array">
+      <obj_property name="ElementShortName">ResultSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/immSrc" type="array">
+      <obj_property name="ElementShortName">immSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">immSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/machine_code" type="array">
+      <obj_property name="ElementShortName">machine_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">machine_code[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/lw_" type="array">
+      <obj_property name="ElementShortName">lw_[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lw_[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sw_" type="array">
+      <obj_property name="ElementShortName">sw_[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/or_" type="array">
+      <obj_property name="ElementShortName">or_[31:0]</obj_property>
+      <obj_property name="ObjectShortName">or_[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/and_" type="array">
+      <obj_property name="ElementShortName">and_[31:0]</obj_property>
+      <obj_property name="ObjectShortName">and_[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider18">
+      <obj_property name="label">main decoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/jump" type="logic">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/ResultSrc" type="array">
+      <obj_property name="ElementShortName">ResultSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/immSrc" type="array">
+      <obj_property name="ElementShortName">immSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">immSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/MAIN_DECODER/control_signals" type="array">
+      <obj_property name="ElementShortName">control_signals[10:0]</obj_property>
+      <obj_property name="ObjectShortName">control_signals[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider37">
+      <obj_property name="label">alu decoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/funct7_5" type="logic">
+      <obj_property name="ElementShortName">funct7_5</obj_property>
+      <obj_property name="ObjectShortName">funct7_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/op_5" type="logic">
+      <obj_property name="ElementShortName">op_5</obj_property>
+      <obj_property name="ObjectShortName">op_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/op_funct7_5" type="array">
+      <obj_property name="ElementShortName">op_funct7_5[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op_funct7_5[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/ADD" type="array">
+      <obj_property name="ElementShortName">ADD[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ADD[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/SUB" type="array">
+      <obj_property name="ElementShortName">SUB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SUB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/SLT" type="array">
+      <obj_property name="ElementShortName">SLT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SLT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/OR" type="array">
+      <obj_property name="ElementShortName">OR[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OR[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/UT/ALU_DECODER/AND" type="array">
+      <obj_property name="ElementShortName">AND[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AND[2:0]</obj_property>
+   </wvobject>
+</wave_config>
