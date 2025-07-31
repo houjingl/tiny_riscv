@@ -1,6 +1,6 @@
 module register_file(
     input logic [0:0] w_en, clk, //rstn,
-    input logic [5:0] addr1, addr2, addr_w,
+    input logic [4:0] addr1, addr2, addr_w,
     input logic [31:0] w_data,
     output logic [31:0] r_data1, r_data2
 );

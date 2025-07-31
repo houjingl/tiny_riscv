@@ -1,20 +1,31 @@
 module single_cycle_riscv (
     input logic clk, //System Clock
-    input logic system_rstn
+    input logic system_rstn,
+    input logic [31:0] instr,
+    input logic [31:0] ReadData,
+    output logic [31:0] PC,
+    output logic MemWrite,
+    output logic [31:0] ALUResult,
+    output logic [31:0] WriteData
 );
 
 //32 bits data lines
-logic[31:0] PCNext, PC, PCplus4, PCTarget, //PC reg and PC ++
-            instr, SrcA, SrcB, immext, //Register file 
-            ALUResult, //ALU
-            WriteData, ReadData, //Data Memory
+logic[31:0] PCNext, PCplus4, PCTarget, //PC reg and PC ++
+            SrcA, SrcB, immext, //Register file 
             result; //To the WD port of RF
 
 //Control Signals
-logic PCSrc, MemWrite, ALUSrc, RegWrite;
+logic PCSrc, ALUSrc, RegWrite;
 logic [1:0] ResultSrc, immSrc;
 logic [2:0] ALUControl;
 logic zeroFlag;
+
+//For testing purposes, the connections to the data and instruction memory will be listed in the ports and from outside of this sv file
+// I-memory
+// instruction_mem IMEM (.mem_addr(PC), .instr(instr));
+// Data Memory
+// data_mem DATAMEM (.addr(ALUResult), .w_datain(WriteData), .w_enable(MemWrite), .clk(clk), .r_dataout(ReadData));
+
 
 //Data Path will be divided using state elements
 //PC reg
@@ -22,9 +33,6 @@ assign PCNext = (PCSrc == 1'b1) ? PCTarget : PCplus4;
 adder PCimm (.a(PC), .b(immext), .out(PCTarget));
 adder PCinc (.a(PC), .b(32'd4), .out(PCplus4));
 PC_ff PCREG (.clk(clk), .rstn(system_rstn), .PCNext(PCNext), .PC(PC));
-
-//I-memory
-instruction_mem IMEM (.mem_addr(PC), .instr(instr));
 
 //RF
 register_file RF (.w_en(RegWrite), .clk(clk), 
@@ -35,9 +43,6 @@ imm_extend IMMEXT (.immSrc(immSrc), .instr(instr[31:7]), .imm32(immext));
 //ALU
 assign SrcB = (ALUSrc == 1'b0) ? WriteData : immext;
 ALU RISCALU (.SrcA(SrcA), .SrcB(SrcB), .ALUControl(ALUControl), .zeroFlag(zeroFlag), .ALUOut(ALUResult));
-
-//Data Memory
-data_mem DATAMEM (.addr(ALUResult), .w_datain(WriteData), .w_enable(MemWrite), .clk(clk), .r_dataout(ReadData));
 
 always_comb begin: result_selection_mux
     case(ResultSrc)

@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Resetting system 
+
+Simulation Result:
+Successful
+$stop called at time : 190 ns : File "D:/tiny_riscv/core/vivado/single_cycle_verif/single_cycle_verif.srcs/sim_1/imports/single_cycle/signal_cycle_verification.sv" Line 66

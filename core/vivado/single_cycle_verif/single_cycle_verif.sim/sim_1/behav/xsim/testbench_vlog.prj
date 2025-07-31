@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/adder.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/alu.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/alu_decoder.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/control_unit_single_cyc.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/data_mem.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/imm_extend.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/instr_mem.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/main_decoder.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/pc_ff.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/hardware_module/reg_file.sv" \
+"../../../../single_cycle_verif.srcs/sources_1/imports/single_cycle/single_cycle.sv" \
+"../../../../single_cycle_verif.srcs/sim_1/imports/single_cycle/signal_cycle_verification.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
