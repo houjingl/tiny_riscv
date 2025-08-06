@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
-`include "core\testbench\multi_cycle\fsm_tb_helper.svh"
+`include "mux_ctrl.svh"
+`include "fsm_tb_helper.svh"
 //Main FSM def
 // module main_FSM
 
@@ -48,6 +48,7 @@ module tb_fsm ();
 
     //Testing all the states of the FSM
     initial begin
+        clk = 1'b0;
         rstn = 1'b0;
         #10;
         rstn = 1'b1;
@@ -55,18 +56,18 @@ module tb_fsm ();
         // Wait for FSM to enter FETCH state, then replace the opcode with the new one
         loop_through_all_opcodes();
 
-        @(posedge DUT.fsm_current_state == FETCH);
-        @(posedge DUT.fsm_current_state == FETCH);
+        @(DUT.fsm_current_state == FETCH);
+        @(DUT.fsm_current_state == FETCH);
 
         $finish;
 
     end
 
-    // function check_state(input fsm_state_t cur_state);
-    //     begin
+    function check_state(input fsm_state_t cur_state);
+        begin
             
-    //     end
-    // endfunction
+        end
+    endfunction
     
     task loop_through_all_opcodes;
     begin 
@@ -91,6 +92,14 @@ module tb_fsm ();
         
     end 
     endtask 
+
+    task check_exe(input op_code_t cur_opcode);
+    begin
+        case(cur_opcode)
+            
+        endcase
+    end
+    endtask
 
 
 

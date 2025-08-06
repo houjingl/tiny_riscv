@@ -1,7 +1,9 @@
+`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
+
 module alu_decoder(
     input logic [6:0] opcode,
     input logic [2:0] funct3,
-    input logic [1:0] ALUop,
+    input alu_op_t ALUop,
     input logic funct7_5,
     output logic [2:0] ALUControl
 );

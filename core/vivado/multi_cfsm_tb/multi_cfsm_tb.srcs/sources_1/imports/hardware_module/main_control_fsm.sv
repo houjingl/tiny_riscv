@@ -1,4 +1,4 @@
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
+`include "mux_ctrl.svh"
 
 module main_FSM(
     //System Clock and reset

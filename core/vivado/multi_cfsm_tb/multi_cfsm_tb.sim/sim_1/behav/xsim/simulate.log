@@ -1,0 +1,2 @@
+Time resolution is 1 ps
+$finish called at time : 245 ns : File "D:/tiny_riscv/core/vivado/multi_cfsm_tb/multi_cfsm_tb.srcs/sim_1/imports/multi_cycle/tb_main_control_fsm.sv" Line 62
