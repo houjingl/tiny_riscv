@@ -43,6 +43,8 @@ module main_FSM(
                      JAL       = 5'b01001,  //Jump to target addr
                     //beq
                      BEQ       = 5'b01010,  //Conditionally branch to target addr
+                    //lui
+                     LUI       = 5'b01011, //add immext with hardware 0
 
                      //ERROR
                      ERROR     = 5'bxxxxx
@@ -54,7 +56,8 @@ module main_FSM(
                      R_TYPE     = 7'b0110011,
                      I_TYPE_ALU = 7'b0010011,
                      J_TYPE_JAL = 7'b1101111,
-                     B_TYPE     = 7'b1100011;
+                     B_TYPE     = 7'b1100011,
+                     U_TYPE     = 7'b0110111;
 
 
     //FSM Next State Logic
@@ -76,6 +79,8 @@ module main_FSM(
                         fsm_next_state = JAL;
                     B_TYPE:
                         fsm_next_state = BEQ;
+                    U_TYPE: 
+                        fsm_next_state = LUI; // LUI change
                     default:
                         fsm_next_state = ERROR;
                 endcase
@@ -100,6 +105,8 @@ module main_FSM(
                 fsm_next_state = ALUWB;
             JAL:
                 fsm_next_state = ALUWB;
+            LUI:
+                fsm_next_state = ALUWB; //LUI change
             ALUWB:
                 fsm_next_state = FETCH;
             BEQ:
@@ -221,6 +228,17 @@ module main_FSM(
                 ALUSrcB   = ALU_SRC_B_FOUR;
                 ALUop     = ALU_OP_ADD;
                 ResultSrc = RESULT_SRC_ALUOUT;
+            end
+            LUI:begin
+                IRWrite   = 1'b0;
+                PCupdate  = 1'b0;
+                RegWrite  = 1'b0;
+                MemWrite  = 1'b0;
+                branch    = 1'b0;
+
+                ALUSrcA = ALU_SRC_A_ZERO;
+                ALUSrcB = ALU_SRC_B_IMMEXT;
+                ALUop = ALU_OP_ADD;
             end
             ALUWB: begin
                 // Outputs for ALUWB state

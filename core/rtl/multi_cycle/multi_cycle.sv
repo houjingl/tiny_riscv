@@ -116,7 +116,7 @@ module multi_cycle #(
 
     //Main Control Unit
     logic zeroFlag;
-    
+
     logic PCWrite;
     logic RegWrite;          
     logic MemWrite;          
@@ -128,7 +128,7 @@ module multi_cycle #(
     alu_src_a_t ALUSrcA;
     adr_src_t AdrSrc;
     logic [2:0] ALUControl;
-    logic [1:0] immSrc;
+    logic [2:0] immSrc;
 
     main_control_unit M_CTRL (
         .opcode    (instr[6:0]),

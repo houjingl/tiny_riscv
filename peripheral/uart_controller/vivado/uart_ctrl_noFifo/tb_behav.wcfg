@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_baud_tick_generator_sv_2548091355 " />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="924.000001 us"></ZoomEndTime>
+      <Cursor1Time time="730.031250 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="351"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb/clk_16mhz" type="logic">
+      <obj_property name="ElementShortName">clk_16mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_16mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/tx_en" type="logic">
+      <obj_property name="ElementShortName">tx_en</obj_property>
+      <obj_property name="ObjectShortName">tx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/baud_setting" type="array">
+      <obj_property name="ElementShortName">baud_setting[1:0]</obj_property>
+      <obj_property name="ObjectShortName">baud_setting[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/serial_out" type="logic">
+      <obj_property name="ElementShortName">serial_out</obj_property>
+      <obj_property name="ObjectShortName">serial_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/test_data" type="array">
+      <obj_property name="ElementShortName">test_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_data[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INPUT_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">INPUT_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INPUT_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/clk_16mhz" type="logic">
+      <obj_property name="ElementShortName">clk_16mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_16mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/baud_setting" type="array">
+      <obj_property name="ElementShortName">baud_setting[1:0]</obj_property>
+      <obj_property name="ObjectShortName">baud_setting[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/tx_en" type="logic">
+      <obj_property name="ElementShortName">tx_en</obj_property>
+      <obj_property name="ObjectShortName">tx_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/baud_tick" type="logic">
+      <obj_property name="ElementShortName">baud_tick</obj_property>
+      <obj_property name="ObjectShortName">baud_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/COUNTER_RESET_LIM" type="array">
+      <obj_property name="ElementShortName">COUNTER_RESET_LIM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COUNTER_RESET_LIM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/sum" type="array">
+      <obj_property name="ElementShortName">sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/enabled" type="logic">
+      <obj_property name="ElementShortName">enabled</obj_property>
+      <obj_property name="ObjectShortName">enabled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/ACC_WIDTH" type="array">
+      <obj_property name="ElementShortName">ACC_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ACC_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/BAUD_TICK_GEN/F_CLK" type="array">
+      <obj_property name="ElementShortName">F_CLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F_CLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/count" type="array">
+      <obj_property name="ElementShortName">count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count[4:0]</obj_property>
+   </wvobject>
+</wave_config>

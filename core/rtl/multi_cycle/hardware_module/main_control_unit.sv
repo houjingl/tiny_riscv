@@ -20,7 +20,7 @@ module main_control_unit (
     output alu_src_a_t ALUSrcA,
     output adr_src_t AdrSrc,
     output logic [2:0] ALUControl,
-    output logic [1:0] immSrc
+    output logic [2:0] immSrc
 );
 
     alu_op_t ALUop;
