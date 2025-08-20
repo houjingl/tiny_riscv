@@ -1,0 +1,5 @@
+
+*** Running vivado
+    with args -log uart_rx_controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_rx_controller.tcl
+
+

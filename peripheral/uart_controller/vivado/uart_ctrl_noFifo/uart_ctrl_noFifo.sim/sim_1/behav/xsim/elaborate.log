@@ -6,16 +6,4 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/tiny_riscv/peripheral/uart_controller/vivado/uart_ctrl_noFifo/uart_ctrl_noFifo.srcs/sources_1/imports/rtl/uart_controller.sv" Line 2. Module uart_controller doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/tiny_riscv/peripheral/uart_controller/vivado/uart_ctrl_noFifo/uart_ctrl_noFifo.srcs/sources_1/imports/rtl/baud_tick_generator.sv" Line 2. Module baud_tick_generator doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/tiny_riscv/peripheral/uart_controller/vivado/uart_ctrl_noFifo/uart_ctrl_noFifo.srcs/sources_1/imports/rtl/uart_controller.sv" Line 2. Module uart_controller doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/tiny_riscv/peripheral/uart_controller/vivado/uart_ctrl_noFifo/uart_ctrl_noFifo.srcs/sources_1/imports/rtl/baud_tick_generator.sv" Line 2. Module baud_tick_generator doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_baud_tick_generator_sv_254...
-Compiling module xil_defaultlib.baud_tick_generator
-Compiling module xil_defaultlib.uart_controller
-Compiling module xil_defaultlib.tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

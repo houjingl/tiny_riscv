@@ -15,6 +15,14 @@ typedef enum logic[1:0] {
     BAUD_SET_1000000 = 2'b11
 } baud_set_t;
 
+function integer clogb2(input integer bit_depth);
+    // returns ceiling(log2(bit_depth))
+    // used to calculate ARSIZE, the number byte of each beat within one burst
+    begin
+        for (clogb2 = 0; bit_depth > 0; clogb2 = clogb2 + 1)
+            bit_depth = bit_depth >> 1;
+    end
+endfunction
 
 
 `endif 
