@@ -29,7 +29,7 @@ module uart_rx_controller #(
 
     logic baud_tick;
     baud_set_t baud_setting;
-    assign baud_setting = BAUD_SET_115200
+    assign baud_setting = BAUD_SET_115200;
     baud_tick_generator BAUD_TICK_GEN(.clk_16mhz(clk_16mhz),.rstn(rstn),
                                     .baud_setting(baud_setting),.baud_tick(baud_tick),.tx_en(rx_start_pulse),.tx_done(rx_done_pulse));
 

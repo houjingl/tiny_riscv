@@ -1,0 +1,23 @@
+Time resolution is 1 ps
+[719000 ps] TX byte=0xff
+[82156000 ps] RX byte=0xff
+[87719000 ps] TX byte=0xf8
+[169156000 ps] RX byte=0xf8
+[174719000 ps] TX byte=0xf1
+[256156000 ps] RX byte=0xf1
+[261719000 ps] TX byte=0xea
+[343156000 ps] RX byte=0xea
+[348719000 ps] TX byte=0xe3
+[430156000 ps] RX byte=0xe3
+[435719000 ps] TX byte=0xdc
+[517156000 ps] RX byte=0xdc
+[522719000 ps] TX byte=0xd5
+[604156000 ps] RX byte=0xd5
+[609719000 ps] TX byte=0xce
+[691156000 ps] RX byte=0xce
+[696719000 ps] TX byte=0xc7
+[778156000 ps] RX byte=0xc7
+[783719000 ps] TX byte=0xc0
+[865156000 ps] RX byte=0xc0
+Test Complete. Test Passed
+$finish called at time : 870781250 ps : File "D:/tiny_riscv/peripheral/uart_controller/vivado/uart_transceiver/uart_transceiver.srcs/sim_1/imports/testbench/tb_uart_top_level.sv" Line 123
