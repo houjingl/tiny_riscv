@@ -1,3 +1,5 @@
+`include "core/rtl/multi_cycle/hardware_module/mux_ctrl.svh"
+
 module ALU(
     input logic [31:0] SrcA, SrcB,
     input logic [2:0]ALUControl,

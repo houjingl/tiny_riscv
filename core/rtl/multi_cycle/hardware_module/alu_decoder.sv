@@ -1,4 +1,4 @@
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
+`include "core/rtl/multi_cycle/hardware_module/mux_ctrl.svh"
 
 module alu_decoder(
     input logic [6:0] opcode,
@@ -13,6 +13,7 @@ module alu_decoder(
     assign op_5 = opcode[5:5];
     logic [1:0] op_funct7_5;
     assign op_funct7_5 = {op_5, funct7_5};
+    //OP 5 indicates whether the instr is R or I, funct7 5 further distinguish the instr see RISC V reference sheet
 
     always_comb begin
         case (ALUop)

@@ -1,4 +1,4 @@
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
+`include "core/rtl/multi_cycle/hardware_module/mux_ctrl.svh"
 
 module multi_cycle #(
     parameter integer C_DATA_WIDTH = 32
@@ -129,9 +129,12 @@ module multi_cycle #(
     adr_src_t AdrSrc;
     logic [2:0] ALUControl;
     logic [2:0] immSrc;
+    
+    logic [6:0] opcode;
+    assign opcode = instr[6:0];
 
     main_control_unit M_CTRL (
-        .opcode    (instr[6:0]),
+        .opcode    (opcode),
         .funct3    (instr[14:12]),
         .funct7_5  (instr[30:30]),
         .zeroFlag  (zeroFlag),

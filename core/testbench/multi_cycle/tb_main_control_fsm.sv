@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
-`include "core\testbench\multi_cycle\fsm_tb_helper.svh"
+`include "core/rtl/multi_cycle/hardware_module/mux_ctrl.svh"
+`include "core/testbench/multi_cycle/fsm_tb_helper.svh"
 //Main FSM def
 // module main_FSM
 

@@ -1,7 +1,7 @@
 `ifndef FSM_TB_HELPER
 `define FSM_TB_HELPER
 
-`include "core\rtl\multi_cycle\hardware_module\mux_ctrl.svh"
+`include "core/rtl/multi_cycle/hardware_module/mux_ctrl.svh"
 
 typedef enum logic [4:0] {
     FETCH     = 5'b00000,  // Fetch instruction and PC inc
