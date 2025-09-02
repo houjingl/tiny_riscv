@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`include "core/multicycle/testbench/utils.svh"
+`include "utils.svh"
 
 module lw_tb();
 

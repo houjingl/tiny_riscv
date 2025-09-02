@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lw_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_alu_sv_3661940288 " />
+            <top_module name="glbl" />
+            <top_module name="lw_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="35.277 ns"></ZoomStartTime>
+      <ZoomEndTime time="48.578 ns"></ZoomEndTime>
+      <Cursor1Time time="41.277 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/lw_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider4">
+      <obj_property name="label">MC internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/PCNext" type="array">
+      <obj_property name="ElementShortName">PCNext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCNext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/Adr" type="array">
+      <obj_property name="ElementShortName">Adr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Adr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/memDataRd" type="array">
+      <obj_property name="ElementShortName">memDataRd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memDataRd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/memDataWt" type="array">
+      <obj_property name="ElementShortName">memDataWt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memDataWt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/OLDPc" type="array">
+      <obj_property name="ElementShortName">OLDPc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OLDPc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/Data" type="array">
+      <obj_property name="ElementShortName">Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/rf_rd1" type="array">
+      <obj_property name="ElementShortName">rf_rd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/rf_rd2" type="array">
+      <obj_property name="ElementShortName">rf_rd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/immExt" type="array">
+      <obj_property name="ElementShortName">immExt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immExt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/srcA" type="array">
+      <obj_property name="ElementShortName">srcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/srcB" type="array">
+      <obj_property name="ElementShortName">srcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">srcB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ALUOut" type="array">
+      <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/zeroFlag" type="logic">
+      <obj_property name="ElementShortName">zeroFlag</obj_property>
+      <obj_property name="ObjectShortName">zeroFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/PCWrite" type="logic">
+      <obj_property name="ElementShortName">PCWrite</obj_property>
+      <obj_property name="ObjectShortName">PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/IRWrite" type="logic">
+      <obj_property name="ElementShortName">IRWrite</obj_property>
+      <obj_property name="ObjectShortName">IRWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ResultSrc" type="array">
+      <obj_property name="ElementShortName">ResultSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultSrc[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ALUSrcB" type="array">
+      <obj_property name="ElementShortName">ALUSrcB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ALUSrcA" type="array">
+      <obj_property name="ElementShortName">ALUSrcA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUSrcA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/AdrSrc" type="array">
+      <obj_property name="ElementShortName">AdrSrc[0:0]</obj_property>
+      <obj_property name="ObjectShortName">AdrSrc[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/immSrc" type="array">
+      <obj_property name="ElementShortName">immSrc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">immSrc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/C_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lw_tb/uut/M_CTRL/CTRL_FSM/fsm_current_state" type="array">
+      <obj_property name="ElementShortName">fsm_current_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">fsm_current_state[4:0]</obj_property>
+   </wvobject>
+</wave_config>

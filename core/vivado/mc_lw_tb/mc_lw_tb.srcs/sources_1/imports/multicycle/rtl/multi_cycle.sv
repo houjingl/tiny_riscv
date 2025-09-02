@@ -1,4 +1,4 @@
-`include "core/multicycle/rtl/hardware_module/mux_ctrl.svh"
+`include "mux_ctrl.svh"
 `timescale 1ns/1ps
 module multi_cycle #(
     parameter integer C_DATA_WIDTH = 32

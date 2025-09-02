@@ -1,4 +1,4 @@
-`include "core/multicycle/rtl/hardware_module/mux_ctrl.svh"
+`include "mux_ctrl.svh"
 `timescale 1ns/1ps
 module alu_decoder(
     input logic [6:0] opcode,

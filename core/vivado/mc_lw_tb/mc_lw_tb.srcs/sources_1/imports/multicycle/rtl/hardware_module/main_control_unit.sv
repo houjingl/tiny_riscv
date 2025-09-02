@@ -1,4 +1,4 @@
-`include "core/multicycle/rtl/hardware_module/mux_ctrl.svh"
+`include "mux_ctrl.svh"
 `timescale 1ns/1ps
 module main_control_unit (
     input logic clk,

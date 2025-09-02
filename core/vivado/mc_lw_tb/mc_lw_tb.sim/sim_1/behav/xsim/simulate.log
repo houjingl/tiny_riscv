@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Fatal: Expected `8`, got `fffffff8`
+Time: 116 ns  Iteration: 0  Process: /lw_tb/Initial24_20  Scope: lw_tb  File: D:/tiny_riscv/core/vivado/mc_lw_tb/mc_lw_tb.srcs/sources_1/imports/multicycle/testbench/lw_tb.sv Line: 105
+$finish called at time : 116 ns
+$finish called at time : 156 ns : File "D:/tiny_riscv/core/vivado/mc_lw_tb/mc_lw_tb.srcs/sources_1/imports/multicycle/testbench/lw_tb.sv" Line 132
