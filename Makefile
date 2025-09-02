@@ -26,6 +26,7 @@ MC_TB_DIR      := core/multicycle/testbench
 MC_HW_DIR      := core/multicycle/rtl/hardware_module
 UART_RTL_DIR   := peripheral/uart_controller/rtl
 VIVADO_DIR     := core/vivado
+TOP            := core/multicycle/rtl/multi_cycle.sv
 
 # VCD directory used by TB via +VCD_PATH plusarg
 TB_VCD_BASE_PATH := $(MC_TB_DIR)/vcd
@@ -61,7 +62,7 @@ $(TB_VCD_BASE_PATH):
 	@mkdir -p $@
 
 # -------- Build all multicycle TBs --------
-build_mc_tb: $(TB_VVPS)
+build_mc_tb: $(TB_VVPS) $(TB_SRCS) $(TB_HEADERS) $(SRCS)
 
 # Pattern rule: compile a single TB (design SRCS + the TB)
 # NOTE: we do not pull in singlecycle or vivado files.
