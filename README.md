@@ -35,6 +35,8 @@ All CPU cores and peripherals are written in **SystemVerilog**. Each processor d
 Core/        # Processor core digital design files, testbenches, and Vivado simulations
 Peripheral/  # GPIO peripheral designs, testbenches, and Vivado simulations
 Reference/   # Reference files and resources used during development
+```
+
 ---
 
 ## IV. Skills & Technologies Applied  
@@ -67,4 +69,5 @@ Reference/   # Reference files and resources used during development
 
 
 ## III. Project Contents  
+
 
