@@ -58,7 +58,7 @@ Reference/   # Reference files and resources used during development
 
 ## VI. Next Steps / Roadmap  
 1. Implement remaining hardware peripherals (SPI, I²C, GPIO).  
-2. Develop the **hazard control unit** required for the pipelined RISC-V CPU.  
+2. Develop the **hazard unit** required for the pipelined RISC-V CPU.  
 3. Expand test coverage with RISCOF and real software programs.  
 4. Prepare for FPGA deployment and hardware-in-the-loop testing.  
 
@@ -69,5 +69,6 @@ Reference/   # Reference files and resources used during development
 
 
 ## III. Project Contents  
+
 
 
