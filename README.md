@@ -68,7 +68,3 @@ Reference/   # Reference files and resources used during development
 
 
 
-## III. Project Contents  
-
-
-
